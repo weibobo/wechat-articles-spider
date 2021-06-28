@@ -7,11 +7,17 @@ import (
 	"time"
 )
 
+//Articles 文章
+// 通过公众号的方式
 type Articles struct {
+	// Fakeid 作者
 	Fakeid string
-	Token  string
+	//Token 公众号token
+	Token string
+	//Cookie 公众号Cookie
 	Cookie string
-	Count  int
+	//Count 一页多少条
+	Count int
 }
 
 func NewArticles(fakeid, token, cookie string, count int) *Articles {

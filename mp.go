@@ -9,11 +9,16 @@ import (
 	"time"
 )
 
+//Mp 获取作者
 type Mp struct {
-	Query   string
-	Token   string
+	//Query 作者查询
+	Query string
+	//Token 公众号Token
+	Token string
+	//Cookies 公众号Cookie
 	Cookies string
-	Count   int
+	//Count 一页多少条
+	Count int
 }
 
 func NewMp(query, token, cookies string) *Mp {
